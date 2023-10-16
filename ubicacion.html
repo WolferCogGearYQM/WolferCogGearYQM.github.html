@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ubicación - FurrBaker</title>
+    <link rel="icon" href="images/logo/logo_small_icon_only.png" type="image/png">
+    <style>
+        body {
+            background-color:rgb(113, 181, 236);
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            position: relative;
+            background-image: url('images/furrybaker.png');
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            text-align: center;
+        }
+
+        h1 {
+            text-align: center;
+            color: #fff;
+            padding-top: 100px;
+            margin: 0;
+        }
+
+        #map {
+            width: 80%;
+            height: 400px;
+            margin: 0 auto;
+        }
+
+        nav {
+            background-color: rgba(0, 0, 0, 0.7);
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 10px 0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        .current a {
+            font-weight: bold;
+            color: #f00;
+        }
+
+        .content {
+            min-height: calc(100vh - 120px);
+            padding: 20px;
+            position: relative;
+            margin-bottom: 300px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Ubicación - FurrBaker</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li class="current"><a href="ubicacion.html">Ubicación</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="content">
+        <h2>Encuéntranos en el Mapa</h2>
+        <img src="images/LocalidadMapa.PNG" width="800">
+        <div id="map"></div>
+        <script>
+            function initMap() {
+                var map = new google.maps.Map(document.getElementById('map'), {
+                    center: { lat: 0, lng: 0 },
+                    zoom: 15
+                });
+            }
+        </script>
+        <p>Información:</p>
+        <p>Opciones de servicio: Comer allí</p>
+        <p>Dirección: Rúa Huertas, 4, 15003 A Coruña</p>
+        <p>Horario: Cierra pronto ⋅ 22:00 ⋅ Apertura: 17:00 (mar)</p>
+        <p>Confirmado por teléfono hace 6 semanas</p>
+        <p>Teléfono: 643 96 39 95</p>
+        <script src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13599.502052773913!2d-8.40749680900008!3d43.36684943575913!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd2e7d48eea8a38d%3A0xaa46150f7e10e763!2sFurritos%20Bar!5e1!3m2!1ses!2ses!4v1697486472075!5m2!1ses!2ses" async defer></script>
+    </main>
+
+    <footer>
+        <p>
+            Aplicacións Web &middot; Sistemas Microinformáticos en Rede
+        </p>
+        <p>
+            Panadería pastelería &middot;
+            <a href="https://wolfercoggearyqm.github.io/" target="_blank">
+                <img src="github-icon.png" alt="GitHub" style="width: 20px; height: 20px;">
+            </a>
+        </p>
+    </footer>
+
+</body>
+
+</html>
