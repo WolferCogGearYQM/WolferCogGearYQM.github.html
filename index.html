@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>FurrBaker</title>
+        <link rel="icon" href="images/logo/logo_small_icon_only.png" type="image/png">
+        <style>
+            html {
+                position: relative;
+            }
+
+            body {
+                background-color: rgb(113, 181, 236);
+                margin: 0;
+                padding: 0;
+                font-family: Arial, sans-serif;
+            }
+
+            header {
+                position: relative;
+                background-image: url('images/furrybaker.png');
+                background-size: cover;
+                background-position: center;
+                height: 400px;
+                text-align: center;
+            }
+
+            .content-container {
+                display: flex;
+            }
+
+            h1 {
+                color: #fff;
+                text-align: center;
+                padding-top: 100px;
+                margin: 0;
+            }
+
+            main {
+                flex: 1;
+            }
+
+            nav {
+                background-color: rgba(0, 0, 0, 0.7);
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                padding: 10px 0;
+            }
+
+            nav ul {
+                list-style: none;
+                padding: 0;
+            }
+
+            nav ul li {
+                display: inline;
+                margin: 0 20px;
+            }
+
+            nav ul li a {
+                text-decoration: none;
+                color: #fff;
+                font-weight: bold;
+            }
+
+
+            article {
+                margin-bottom: 20px;
+                padding: 10px;
+                border: 1px solid #ddd;
+                width: 70%;
+                float: right;
+            }
+
+            h2 {
+                margin-top: 0;
+            }
+
+            aside {
+                float: left;
+                width: 30%;
+                margin-top: 10px;
+                margin-right: 20px;
+            }
+
+            ol {
+                list-style-type: decimal;
+            }
+
+            li {
+                margin-bottom: 5px;
+            }
+
+            aside ol li a {
+                text-decoration: none;
+                color: #000000;
+            }
+
+            aside ol li a:visited {
+                color: #000000;
+
+            }
+
+            aside ol li a:hover {
+                color: #000000;
+
+            }
+
+            .current a {
+                font-weight: bold;
+                color: #ff0000;
+            }
+
+            .content {
+                min-height: calc(100vh - 120px);
+                padding: 20px;
+                position: relative;
+                margin-bottom: 500px;
+            }
+
+            footer {
+                background-color: #224f94;
+                margin-top: 300px;
+                color: #fff;
+                text-align: center;
+                padding: 10px 0;
+                position: fixed;
+                bottom: 0;
+                width: 100%;
+            }
+        </style>
+    </head>
+
+<body>
+    <header>
+        <h1>FurrBaker</h1>
+        <nav>
+            <ul>
+                <li class="current"><a href="index.html">Inicio</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="ubicacion.html">Ubicación</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="content">
+        <aside>
+            <h3>Navegación Rápida</h3>
+            <ol>
+                <li><a href="#oferta1">Ofertas de la Semana</a></li>
+                <li><a href="#oferta2">Promociones</a></li>
+                <li><a href="#oferta3">Descuentos</a></li>
+                <li><a href="#oferta4">Especialidades del Mes</a></li>
+                <li><a href="#oferta5">Ofertas de Fin de Semana</a></li>
+            </ol>
+        </aside>
+        <article id="oferta1">
+            <h2>Oferta de la Semana</h2>
+            <p>¿Eres peludo y necesitas incorporar un pastelero furro a tu negocio? ¿Tienes una pastelería y buscas nuevo personal? ¿Eres estudiante de pastelería y buscas tu primer trabajo proveniente del Furry Fandom? Aquí tienes la nueva plataforma que pone en contacto las pastelerías con los furries de la pastelería, por si necesitas ofrecer un puesto de trabajo o buscas un profesional de la pastelería furra.</p>
+            <p>Se precisa pastelero/pastelera con experiencia y que sea furro/a, horario de mañana, jornada completa, incorporación inmediata, puesto fijo. Adjuntar CV</p>
+            <p>Buscamos Pastelero/a que sea Furro/a y tenga un mínimo de formación. Para zona de masas y zona de pastelería fría, hasta 1200€ mensuales.</p>
+        </article>
+
+        <article id="oferta2">
+            <h2>Promociones</h2>
+            <p>Pasteles de chocolate 37% de descuento por la compra de 3</p>
+            <p>Descuento de un pan por la compra de 3</p>
+
+        </article>
+
+        <article id="oferta3">
+            <h2>Descuentos</h2>
+            <p>Biscuits Galicia a 25% de descuento</p>
+            <p>Pan de pueblo a 7% de descuento</p>
+            <p>Pastelitos rellenos a 41% de descuento</p>
+            <p>Tartas 50% de descuento a mitad de precio</p>
+
+        </article>
+
+        <article id="oferta4">
+            <h2>Especialidades del Mes</h2>
+            <p>Postres</p>
+            <p>Dulces</p>
+            <p>Pasteles</p>
+            <p>Tortas</p>
+            <p>Tartas</p>
+            <p>Panes</p>
+
+        </article>
+
+        <article id="oferta5">
+            <h2>Ofertas de Fin de Semana</h2>
+            <p>Cafés a 25% de descuento</p>
+
+        </article>
+    </main>
+
+
+
+    <footer>
+        <p>
+            Aplicacións Web &middot; Sistemas Microinformáticos en Rede
+        </p>
+        <p>
+            Panadería pastelería &middot;
+            <a href="https://wolfercoggearyqm.github.io/" target="_blank">
+                <img src="github-icon.png" alt="GitHub" style="width: 20px; height: 20px;">
+            </a>
+        </p>
+    </footer>
+
+</html>

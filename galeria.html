@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Galería - FurrBaker</title>
+    <link rel="icon" href="images/logo/logo_small_icon_only.png" type="image/png">
+    <style>
+        body {
+            background-color:rgb(113, 181, 236);
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+
+        header {
+            position: relative;
+            background-image: url('images/furrybaker.png');
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            text-align: center;
+        }
+
+        h1 {
+            text-align: center;
+            color: #fff;
+            padding-top: 100px;
+            margin: 0;
+        }
+
+        table {
+            width: 80%;
+            margin: 0 auto;
+            border-collapse: collapse;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid #ddd;
+        }
+
+        th,
+        td {
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #27dd03;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        nav {
+            background-color: rgba(0, 0, 0, 0.7);
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 10px 0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        .current a {
+            font-weight: bold;
+            color: rgb(255, 0, 0);
+        }
+
+        .content {
+            min-height: calc(100vh - 120px);
+            padding: 20px;
+            position: relative;
+            margin-bottom: 300px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #ffffff;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Galería - FurryBaker</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li class="current"><a href="galeria.html">Galería</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="ubicacion.html">Ubicación</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="content">
+        <table>
+            <tr>
+                <th>Imagen</th>
+                <th>Descripción</th>
+            </tr>
+            <tr>
+                <td><img src="images/DogeBread.png" alt="Imagen 1" width="300"></td>
+                <td>DogeBreads a 5,99€</td>
+            </tr>
+            <tr>
+                <td><img src="images/sorpresa-de-navidad-hosteleria.gif" alt="Imagen 1" width="300"></td>
+                <td>Biscuits galicia a 14,99€</td>
+            </tr>
+            <tr>
+                <td><img src="images/FurryPaws.JPG" alt="Imagen 1" width="300"></td>
+                <td>FurryPaws a 4,99€</td>
+            </tr>
+            <tr>
+                <td><img src="images/FurryCake.jpg" alt="Imagen 1" width="300"></td>
+                <td>UwUCakes a 19,99€</td>
+            </tr>
+        </table>
+    </main>
+
+    <footer>
+        <p>
+            Aplicacións Web &middot; Sistemas Microinformáticos en Rede
+        </p>
+        <p>
+            Panadería pastelería &middot;
+            <a href="https://wolfercoggearyqm.github.io/" target="_blank">
+                <img src="github-icon.png" alt="GitHub" style="width: 20px; height: 20px;">
+            </a>
+        </p>
+    </footer>
+
+</body>
+
+</html>
